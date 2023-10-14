@@ -4,7 +4,7 @@ $mysqlDatabaseName ='pinchetas_general';
 $mysqlUserName ='root';
 $mysqlPassword ='';
 $mysqlHostName ='localhost';
-$mysqlExportPath ='C:\Users\vgualdron\Desktop\db_test_pinchetas_backup.sql';
+$mysqlExportPath ='db_test_pinchetas_restaurante_backup.sql';
 
 // Backup con mysqldump
 $command='mysqldump --opt -h' .$mysqlHostName .' -u' .$mysqlUserName .' -p' .$mysqlPassword .' ' .$mysqlDatabaseName .' > ' .$mysqlExportPath;
