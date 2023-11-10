@@ -327,8 +327,8 @@ export default {
         this.$toast.error("Debe escribir la descripción");
         return false;
       }
-      if (!this.objeto.orden || this.objeto.orden.trim().length < 1) {
-        this.$toast.error("Debe de escribir el orden");
+      if (!this.objeto.orden || this.objeto.orden < -5) {
+        this.$toast.error("Debe de escribir un número de orden válido");
         return false;
       }
       if (this.objeto.costo <= 0) {
@@ -339,15 +339,15 @@ export default {
         this.$toast.error("Debe escribir el precio");
         return false;
       }
-      if (!this.objeto.cantidad || this.objeto.cantidad.trim().length < 1) {
+      if (!this.objeto.cantidad || this.objeto.cantidad < 0) {
         this.$toast.error("Debe escribir el cantidad");
         return false;
       }
-      if (!this.objeto.estado || this.objeto.estado.trim().length < 1) {
+      if (!this.objeto.estado || this.objeto.estado < 1) {
         this.$toast.error("Debe seleccionar el estado");
         return false;
       }
-      if (!this.objeto.idtipoproducto || this.objeto.idtipoproducto.trim().length < 1) {
+      if (!this.objeto.idtipoproducto || this.objeto.idtipoproducto < 1) {
         this.$toast.error("Debe seleccionar el tipo de producto");
         return false;
       }
